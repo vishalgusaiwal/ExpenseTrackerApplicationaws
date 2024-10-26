@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(compress());
 app.use(helmet());
 app.use(cors());
-app.get('/', (req, resp) => {
+app.get('/api/v1/expenses', (req, resp) => {
     resp.status(200).send(Templet());
 });
 
