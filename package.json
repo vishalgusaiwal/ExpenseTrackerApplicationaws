@@ -10,7 +10,7 @@
   "scripts": {
     "development": "nodemon server/server.js",
     "production": "node server/server.js",
-      "start": "node server/server.js"
+    "start": "node server/server.js"
   },
   "devDependencies": {
     "eslint": "^8.21.0"
@@ -23,6 +23,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "helmet": "^8.0.0",
+    "mongoose": "^8.7.3",
     "nodemon": "^3.1.7"
   }
 }
