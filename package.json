@@ -7,9 +7,22 @@
   "author": {
     "name": "vishal gusaiwal"
   },
+  "scripts": {
+    "development": "nodemon server/server.js",
+    "production": "node server/server.js",
+      "start": "node server/server.js"
+  },
   "devDependencies": {
     "eslint": "^8.21.0"
   },
-  "eslintConfig": {
+  "eslintConfig": {},
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "nodemon": "^3.1.7"
   }
 }
