@@ -34,7 +34,28 @@
     </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="server\controllers\auth.controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\controllers\error.controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\controllers\user.controller.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="server\express.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\helper\dbErrorHandler.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\models\user.model.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\routes\auth.routes.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\routes\user.routes.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="server\server.js">
@@ -47,6 +68,10 @@
   <ItemGroup>
     <Folder Include="config\" />
     <Folder Include="server\" />
+    <Folder Include="server\models\" />
+    <Folder Include="server\helper\" />
+    <Folder Include="server\controllers\" />
+    <Folder Include="server\routes\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
