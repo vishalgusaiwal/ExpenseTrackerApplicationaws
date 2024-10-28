@@ -6653,6 +6653,7 @@
     <Content Include="client\node_modules\yocto-queue\readme.md" />
     <Content Include="client\package-lock.json" />
     <Content Include="client\package.json" />
+    <Content Include="client\public\avatar.jpg" />
     <Content Include="client\public\favicon.ico" />
     <Content Include="client\public\index.html" />
     <Content Include="client\public\logo192.png" />
@@ -6663,6 +6664,12 @@
     <Content Include="client\src\App.css" />
     <Content Include="client\src\App.js" />
     <Content Include="client\src\App.test.js" />
+    <Content Include="client\src\auth\api-auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\auth\auth-helper.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="client\src\components\About.js">
       <SubType>Code</SubType>
     </Content>
@@ -6672,14 +6679,23 @@
     <Content Include="client\src\components\NotFound.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="client\src\HomePage.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="client\src\index.css" />
     <Content Include="client\src\index.js" />
     <Content Include="client\src\logo.svg" />
     <Content Include="client\src\MainRouter.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="client\src\PrivateRoute.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="client\src\reportWebVitals.js" />
     <Content Include="client\src\setupTests.js" />
+    <Content Include="client\src\user\api-user.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="client\theme.js">
       <SubType>Code</SubType>
     </Content>
@@ -8499,6 +8515,8 @@
     <Folder Include="client\public\" />
     <Folder Include="client\src\" />
     <Folder Include="client\src\components\" />
+    <Folder Include="client\src\auth\" />
+    <Folder Include="client\src\user\" />
     <Folder Include="config\" />
     <Folder Include="server\" />
     <Folder Include="server\models\" />
