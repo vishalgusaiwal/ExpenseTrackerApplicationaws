@@ -9,8 +9,8 @@ const MainRouter = () => {
     return (
         <Router>
             <Routes>
-                <Route path="expenses/" element={<Home />} />
-                <Route path="expenses/about" element={<About />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
                 {/* Add more routes as needed */}
                 <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
             </Routes>
