@@ -8,11 +8,13 @@ import Templet from './../templet.js';
 import authRoutes from './routes/auth.routes.js';
 import userRoutes from './routes/user.routes.js';
 import path from 'path';
+import config from '../config/config.js';
 
 const CURRENT_WORKING_DIR = process.cwd();
-
+var dir = 'client';
+if (config.env === "production") dir = 'ExpenseTrackerApplicationaws/client'
 const app = express();
-app.use(express.static(path.join(CURRENT_WORKING_DIR, './client/build')));
+app.use(express.static(path.join(CURRENT_WORKING_DIR, `./${dir}/build`)));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -20,7 +22,7 @@ app.use(compress());
 app.use(helmet());
 app.use(cors());
 app.get('/expenses', (req, resp) => {
-    resp.sendFile(path.join(CURRENT_WORKING_DIR, './client/build/index.html'));
+    resp.sendFile(path.join(CURRENT_WORKING_DIR, `./${dir}/build/index.html`));
 });
 app.use('/api/v1/expenses/ath', authRoutes);
 app.use('/api/v1/expenses/usr', userRoutes);
