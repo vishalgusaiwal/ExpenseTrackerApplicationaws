@@ -9,7 +9,8 @@
   },
   "scripts": {
     "development": "nodemon server/server.js",
-    "production": "node server/server.js",
+    "production": "npm run build && node server/server.js",
+    "build": "cd client && npm install && npm run build",
     "start": "node server/server.js"
   },
   "devDependencies": {
